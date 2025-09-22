@@ -23,7 +23,7 @@ def initial_assignment(P, B_start, B_max, B_min, K, E, sunrise, sunset):
                 return S
             q_1 = P_copy[0]
             S = upgrade(S, q_1, sunrise, B_start, B_min, K, E)
-            print(S, "up\n")
+
 
 
 def sort_plans(P):
@@ -86,8 +86,8 @@ B_min = 10
 B_max = 30
 B_start = 15
 K = 24
-sunrise = 4
-sunset = 20
+sunrise = 1
+sunset = 18
 E = [1, 1, 2, 3, 4, 5, 5, 6, 6, 6, 6, 5, 5, 4, 3, 2, 1, 1, 0, 0, 0, 0, 0, 0]
 
 result = initial_assignment(plans, B_start, B_max, B_min, K, E, sunrise, sunset)
